@@ -15,6 +15,8 @@
   </head>
   <body>
 
+    <div class="background" id="background" onclick="closs()"></div>
+
     <div class="nav">
 
       <div class="logo">
@@ -22,9 +24,20 @@
     <h2>Muzamil Khan</h2>
     </div>
 
+    <a class="fas fa-bars" id="bars" onclick="res()"  id="bar"></a>
+        <div class="res_nav" id="res_nav">
+            <div class="option" id="option">
+                <a class="far fa-times-circle close" id="close" onclick="closs()"></a>
+                <ul class="res-nav">
+                    <li><p><a href="./index.html" >Home</a></p></li>
+                    <li class="li"><a href="./contact.html" class="outer button  text">Say Hello</a></li>
+                </ul>
+            </div>
+        </div>
+
     <nav class="nav">
         <ul class="nav-ul">
-        <li><a href="./index.html" class="h">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li class="li"><a href="./contact.html" class="outer button text">Say Hello</a></li>
         </ul>
     </nav>
@@ -35,37 +48,37 @@
     <div class="icons">
     <i class="fab fa-google"></i>
     <input type="text" value="muzmmil.khan16@gmail.com" disabled id="myInput">
-    <button class="btn btn-success" onclick="myFunction()">Copy text</button>
+    <button class="btn btn-success" onclick="myFunction()">Mail Now</button>
     </div>
     
     <div class="icons">
     <i class="fab fa-facebook-f"></i>   
     <input type="text" value="https://web.facebook.com/profile.php?id=100009482720934" disabled id="myInput">
-    <button class="btn btn-success" onclick="myFunction()">Copy text</button>
+    <a class="btn btn-success" onclick="myFunction()" href="https://web.facebook.com/profile.php?id=100009482720934" target="_blank">Discuss Now</a>
     </div>
 
     <div class="icons">
     <i class="fab fa-instagram"></i>
     <input type="text" value="https://www.instagram.com/muzammil.razayy/" disabled id="myInput">
-    <button class="btn btn-success" onclick="myFunction()">Copy text</button>
+    <a class="btn btn-success" onclick="myFunction()" href="https://www.instagram.com/muzammil.razayy/" target="_blank">Discuss Now</a>
     </div>
 
     <div class="icons">
     <i class="fab fa-linkedin-in"></i>
     <input type="text" value="https://www.linkedin.com/in/muzamil-khan-a91357212/" disabled id="myInput">
-    <button class="btn btn-success" onclick="myFunction()">Copy text</button>
+    <a class="btn btn-success" onclick="myFunction()" href="https://www.linkedin.com/in/muzamil-khan-a91357212/" target="_blank">Hire Now</a>
     </div>
 
     <div class="icons">
     <img src="../Images/fiver.png" alt="">
     <input type="text" value="https://www.fiverr.com/muzmmilkhan1?up_rollout=true" disabled id="myInput">
-    <button class="btn btn-success" onclick="myFunction()">Copy text</button>
+    <a href="https://www.fiverr.com/muzmmilkhan1?up_rollout=true" target="_blank" class="btn btn-success" onclick="myFunction()">Copy text</a>
     </div>
 
     <div class="icons">
     <img src="../Images/upwork.png" alt="">
     <input type="text" value="Not Available Right Now" disabled id="myInput">
-    <button class="btn" onclick="myFunction()" disabled>Copy text</button>
+    <button class="btn" onclick="myFunction()" disabled>Hire Now</button>
     </div>
 </div>
 
@@ -110,6 +123,8 @@
     }
     
 </script>
+
+<script src="./app.js/app.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
